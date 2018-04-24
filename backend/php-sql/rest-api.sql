@@ -1,0 +1,3 @@
+
+-- CREATE DATABASE IF NOT EXISTS `u7970538_kulamobil` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci	;
+-- USE `u7970538_kulamobil`;

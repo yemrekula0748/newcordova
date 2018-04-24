@@ -1,0 +1,35 @@
+	<ion-view view-title="{{ about_us.title.rendered }}" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"  scroll="true"   id="page-about_us_singles" class="page-about_us_singles">
+		
+<ion-refresher pulling-text="Pull to refresh..."  on-refresh="doRefresh()"></ion-refresher>
+<div class="list card">
+    <div class="item item-avatar">
+        <img alt="" ng-src="{{about_us.x_gravatar}}" />
+        <h2 ng-bind-html="about_us.title.rendered | to_trusted"></h2>
+        <p> {{about_us.x_date}}</p>		
+	</div>
+    <div class="item noborder">
+        <img class="full-image" ng-src="{{about_us.x_featured_media_large}}" zoom-view="true" zoom-src="{{about_us.x_featured_media_original}}"/>
+    </div>
+    <div class="item item-text-wrap noborder to_trusted" ng-bind-html="about_us.content.rendered | strHTML"></div>
+    <div class="item noborder">
+        by <strong ng-bind-html="about_us.x_author | strHTML"></strong>
+    </div>
+</div>
+<div class="list card">
+	<div class="item tabs tabs-secondary tabs-icon-left tabs-stable">
+        <a class="tab-item" run-social-sharing message="{{about_us.link}}"><i class="icon ion-android-share-alt"></i> Share</a>
+	    <a class="tab-item" run-open-url href="{{about_us.link}}"><i class="icon ion-link"></i> Browser</a>   
+    </div>
+</div>    
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+    
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

@@ -1,0 +1,122 @@
+	<ion-view view-title="Beslenme Rehberi" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-beslenme_page" class="page-beslenme_page">
+		
+	<div style="width: 100%;height:100%;">
+		<ion-slide-box class="ion-slide-tabs" slide-tabs-scrollable="false" show-pager="false" ion-slide-tabs>
+			<ion-slide ion-slide-tab-label="Anaekran" >
+					<ion-content scroll="false" class="slidingTabContent">
+						<div class="list">
+							<a class="item item-icon-left" ng-href="#/ebeveyn_rehberi/men1" >
+								<i class="icon ion-android-star" ></i>
+								<h2>{{ "Ä°laç Rehberi" | translate }}</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/ebeveyn_rehberi/yenidogan_page" >
+								<i class="icon ion-android-favorite" ></i>
+								<h2>{{ "YenidoÄan Rehberi" | translate }}</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/ebeveyn_rehberi/emzirme_page" >
+								<i class="icon ion-android-happy" ></i>
+								<h2>{{ "Emzirme Rehberi" | translate }}</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/ebeveyn_rehberi/beslenme_page" >
+								<i class="icon ion-android-restaurant" ></i>
+								<h2>{{ "Beslenme Rehberi" | translate }}</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/ebeveyn_rehberi/gelisim_page" >
+								<i class="icon ion-ios-body-outline" ></i>
+								<h2>{{ "GeliÅim Rehberi" | translate }}</h2>
+								<span class="item-note pull-left"></span>
+							</a>
+						</div>
+					</ion-content>
+			</ion-slide>
+			<ion-slide ion-slide-tab-label="Sesli Kaynak" >
+					<ion-content scroll="false" class="slidingTabContent">
+						<div class="list">
+						</div>
+					</ion-content>
+			</ion-slide>
+		</ion-slide-box>
+	</div>
+
+		<div class="dashboard-panel">
+			<div class="item item-title no-border item-positive-900">Anaekran</div>
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 no-border light positive-bg ink"  ng-href="#/ebeveyn_rehberi/men1" >
+					<i class="icon ion-android-star" ></i>
+					<p>{{ "Ä°laç Rehberi" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light positive-900-bg ink"  ng-href="#/ebeveyn_rehberi/yenidogan_page" >
+					<i class="icon ion-android-favorite" ></i>
+					<p>{{ "YenidoÄan Rehberi" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light calm-bg ink"  ng-href="#/ebeveyn_rehberi/emzirme_page" >
+					<i class="icon ion-android-happy" ></i>
+					<p>{{ "Emzirme Rehberi" | translate }}</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			
+
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 no-border light calm-900-bg ink"  ng-href="#/ebeveyn_rehberi/beslenme_page" >
+					<i class="icon ion-android-restaurant" ></i>
+					<p>{{ "Beslenme Rehberi" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light balanced-bg ink"  ng-href="#/ebeveyn_rehberi/gelisim_page" >
+					<i class="icon ion-ios-body-outline" ></i>
+					<p>{{ "GeliÅim Rehberi" | translate }}</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			<div class="item item-title no-border item-positive-900">Sesli Kaynak</div>
+		</div>
+<div class="card"> <div class="item item-text-wrap">    This is a basic Card which contains an item that has wrapping text.  </div></div><div class="list card">
+
+  <div class="item item-avatar">
+    <img src="data/images/header/logo.png">
+    <h2>Marty McFly</h2>
+    <p>November 05, 1955</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="data/images/images/barner-2.jpg">
+    <p>
+      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+      the content is from a card-body consisting of an image and paragraph text. The footer
+      consists of tabs, icons aligned left, within the card-footer.
+    </p>
+    <p>
+      <a href="#" class="subdued">1 Like</a>
+      <a href="#" class="subdued">5 Comments</a>
+    </p>
+  </div>
+
+</div><div class="list card">
+
+  <div class="item item-avatar">
+    <img src="data/images/header/logo.png">
+    <h2>Pretty Hate Machine</h2>
+    <p>Nine Inch Nails</p>
+  </div>
+
+  <div class="item item-image">
+    <img src="data/images/images/barner-1.jpg">
+  </div>
+
+  <a class="item item-icon-left assertive" href="#">
+    <i class="icon ion-music-note"></i>
+    Start listening
+  </a>
+
+</div><div class="card">  <div class="item item-divider">    I'm a Header in a Card!  </div>  <div class="item item-text-wrap">    This is a basic Card with some text.  </div>  <div class="item item-divider">    I'm a Footer in a Card!  </div></div>
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

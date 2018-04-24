@@ -1,0 +1,45 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar ng-show="$root.headerExists" id="navbar-right-top" class="page-title bar-positive-900">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+			</ion-nav-buttons>
+			<ion-nav-buttons side="right">
+				<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="fabButtonUp"></ion-nav-view>
+		<ion-nav-view animation="none" name="ebeveyn_rehberi-side_menus"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left">
+		<ion-header-bar class="bar-positive-900  ">
+			<h1 class="title"><span ng-bind-html="appName | strHTML"></span></h1>
+		</ion-header-bar>
+		<ion-content class="stable-bg dark">
+			<ion-list class="list" >
+				<ion-item class="item item-divider text-left" >
+					 {{ "Anaekran" | translate }}
+				</ion-item>
+				<ion-item  class="menu-men1 item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="ebeveyn_rehberi.men1">
+					<i class="icon ion-android-star"></i> {{ "İlaç Rehberi" | translate }}
+				</ion-item>
+				<ion-item  class="menu-yenidogan_page item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="ebeveyn_rehberi.yenidogan_page">
+					<i class="icon ion-android-favorite"></i> {{ "Yenidoğan Rehberi" | translate }}
+				</ion-item>
+				<ion-item  class="menu-emzirme_page item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="ebeveyn_rehberi.emzirme_page">
+					<i class="icon ion-android-happy"></i> {{ "Emzirme Rehberi" | translate }}
+				</ion-item>
+				<ion-item  class="menu-beslenme_page item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="ebeveyn_rehberi.beslenme_page">
+					<i class="icon ion-android-restaurant"></i> {{ "Beslenme Rehberi" | translate }}
+				</ion-item>
+				<ion-item  class="menu-gelisim_page item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="ebeveyn_rehberi.gelisim_page">
+					<i class="icon ion-ios-body-outline"></i> {{ "Gelişim Rehberi" | translate }}
+				</ion-item>
+				<ion-item class="item item-divider text-left" >
+					 {{ "Sesli Kaynak" | translate }}
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
